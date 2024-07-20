@@ -1,0 +1,163 @@
+body{
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    border:2px solid rgba(255,255,255,.2);
+    background: black;
+    background-size: cover;
+    background-position: center;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  
+  h1{
+    text-align: center;
+    color:#2d6fb1;
+  }
+  .inputForm{
+    padding:20px 45px 20px 20px;
+    border-radius:40px;
+    border: none;
+    outline: none;
+    color:rgb(253, 10, 213);
+    text-align: center;
+  }
+  .inputForm input{ 
+    width: 20%;
+    height:100%;
+    background:transparent;
+    border: none;
+    outline: none;
+    border:2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color:orange;
+    padding: 10px 10px 2px 2px;
+  }
+  .inputForm input::placeholder{
+  text-align: center;
+  color:#ffffff7c;
+  }
+  .inputForm input[type="text"],input[type="number"]{
+    text-align: center;
+  }
+  .inputForm button{
+    width: 20%;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    background: darkblue;
+    color:lightblue;
+    cursor: pointer;
+  }
+  .inputForm button:hover{
+    background: lightblue;
+    color:darkblue;
+  }
+  
+  .screen
+  {
+    width:100%;
+    height:20px;
+    background:#2d6fb1;
+    color:#fff;
+    line-height:20px;
+    font-size:15px;
+  }
+  .seatStructure{
+    padding-left: 15%;
+    margin-left: 20%;
+  }
+  
+  .smallBox::before
+  {
+    content:" ";
+    width:15px;
+    height:15px;
+    float:left;
+    margin-right:10px;
+  }
+  .greenBox::before
+  {
+    content:" ";
+    background:Green;
+    margin-right:20px;
+  }
+  .redBox::before
+  {
+    content:" ";
+    background:Red;
+  }
+  .emptyBox::before
+  {
+    content:" ";
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    background-color:#ccc;
+  }
+  .seats
+  {
+    border:1px solid red;
+    background:yellow;
+  } 
+  .seatGap
+  {
+    width:40px;
+  }
+  
+  .seatVGap
+  {
+    height:40px;
+  }
+  
+  table
+  {
+    margin-top: 20px;
+    border-color: #fff;
+    text-align:center;
+  }
+  
+  
+  .Displaytable
+  {
+    margin-right: 60%;
+    color: #fff;
+    background: transparent;
+    backdrop-filter:blur(-20px);
+    text-align:center;
+  }
+  .Displaytable td, .Displaytable th {
+      border: 1px solid;
+      text-align: center;
+      color:pink;
+  }
+  
+  textarea{
+    color:#fff;
+    border:none;
+    margin-right: 50%;
+    padding-right: 50%;
+    background:transparent;
+    text-align: center;
+    color:orange;
+  } 
+  input[type=checkbox] {
+      width:0px;
+      margin-right:18px;
+  }
+  
+  input[type=checkbox]:before {
+      content: "";
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      vertical-align:middle;
+      text-align: center;
+      box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+      background-color:#ccc;
+  }
+  
+  input[type=checkbox]:checked:before {
+      background-color:Green;
+      font-size: 15px;
+  }
+  
