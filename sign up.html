@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SIGN UP</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="view">
+    <form action=" ">
+        <h2>SIGN UP</h2>
+        <div class="input-box">
+            First Name:<input type="text" placeholder="Enter your First Name" required>
+        </div>
+        <div class="input-box">
+            Last Name:<input type="text" placeholder="Enter your Last Name" required>
+        </div>
+        <div class="input-box">
+            Email:<input type="email" placeholder="Enter your E-mail"required>
+        </div>
+     <div class="input-box">
+            Phone No:<input type="number" placeholder="Enter your Phone no" required>
+        </div>
+        <div class="input-box">
+            Create Password:<input type="password" placeholder="Enter your Password"required>
+        </div>
+        <button type="submit" class="btn" onclick="msg(event)">SUMBIT</button>
+    </form>
+</div>
+<script>
+ function msg(event)
+ {
+    event.preventDefault()
+    alert("Account Created successfully!")
+    window.location.href="login.html"
+ }
+</script>
+</body>
+</html>
