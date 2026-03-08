@@ -14,9 +14,12 @@ function takeData() {
       notification.style.color="red"
       notification.style.backgroundColor="yellow"
       notification.style.display="inline"
-      notification.style.marginLeft="10%"
-  } 
-  else {
+      notification.style.marginLeft="10%" 
+   if(numSeats>=120) {
+    alert("Theater contains only 120 seats ");
+  }
+}
+    else{
       alert("Please fill in both fields");
   }
 }
@@ -57,15 +60,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const orderButton = document.createElement("button");
   orderButton.innerText = "Confirm Selection";
   orderButton.className = "order";
-  orderButton.style.color="lightblue";
-  orderButton.style.backgroundColor="darkblue";
-  orderButton.style.width="20%";
-  orderButton.style.borderRadius="20px";
-  orderButton.style.height="40px";
-  orderButton.style.marginLeft="40%";
-  orderButton.style.marginTop="30px";
-
-
   orderButton.onclick = confirmSelection;
   document.body.appendChild(orderButton);
 });

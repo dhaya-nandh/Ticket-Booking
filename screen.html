@@ -3,9 +3,10 @@
 <head>
   <title>SCREEN</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="main.js"defer></script>
+  <script src="main.js"></script>
 </head>
-<body onload="onLoaderFunc()">
+<body>
+  <section>
   <h1>WELCOME TO DHAYA 4DX CINEMAS</h1>
 
 <div class="inputForm">
@@ -210,7 +211,7 @@
     <td><input type="checkbox" class="seats" value="J12"></td>
 </tr>
   <tr><td colspan="14"><div class="screen">SCREEN</div></td>
-      <td rowspan="20">
+      <td rowspan="20" class="seatscolor">
         <div class="smallBox greenBox">Selected Seat</div> <br/>
         <div class="smallBox redBox">Reserved Seat</div><br/>
         <div class="smallBox emptyBox">Empty Seat</div><br/>
@@ -218,7 +219,6 @@
   
 </table>
 <div class="displayerBoxes">
-<center>
   <table class="Displaytable">
   <tr>
     <th>Name</th>
@@ -231,8 +231,8 @@
     <td><textarea id="seatsDisplay"></textarea></td>
   </tr>
 </table>
-</center>
 </div>
+</section>
 </body>
 </html>
 

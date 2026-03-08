@@ -9,185 +9,80 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color:gray;
-    background-size: cover;
-    background-position: center;
+    background-color:rgba(89, 106, 135);
 }
+/*movies.html*/
 .wrapper{
-    width:420px;
-    background:transparent;
-    border:2px solid rgba(255,255,255,.2);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0,0,0,.2);
-    color: #fff;
-    border-radius: 10px;
-    padding: 30px 40px;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  margin-left:25%;
 }
-.wrapper h2{
-    color:rgb(218, 128, 10);
-    font-style:italic;
-    font-size:36px;
-    text-align: center;
+.head1{
+   display:flex;
+   position: absolute;
+   top:80px;
+   color:pink;
 }
-.wrapper .input-box{
-    position: relative;
-    width:100%;
-    height:50px;
-    margin:30px 0;
+.box{
+  display:flex;
+  flex-direction: column;
+  background-color: green;
+  border:1px solid blue;
+  margin-left: 20px;
+  gap:10px;
 }
-.input-box input{
-    width:100%;
-    height:100%;
-    background:transparent;
-    border: none;
-    outline: none;
-    border:2px solid rgba(255,255,255,.2);
-    border-radius: 40px;
-    font-size: 16px;
-    color: #fff;
-    padding: 20px 45px 20px 20px;
-}
-.input-box input::placeholder{
-    color:#fff;
-}
-.input-box i{
-    position: absolute;
-    right:20px;
-    top:50%;
-    transform: translateY(-50%);   
-    font-size:20px;
-}
-.wrapper .remember-me{
+  img{
     display: flex;
-    justify-content: space-between;
-    font-size: 14.5px;
-    margin: -15px 0 15px;
-}
-.remember-me label input{
-    accent-color: #fff;
-    margin-right: 3px;
-}
-.remember-me a{
-    color:#fff;
-    text-decoration: none;
-}
-.remember-me a:hover{
-    text-decoration: underline;
-    color: rgb(255, 6, 6);
-}
-.wrapper .btn{
-    width:100%;
-    height:45px;
-    background:  #fff;
-    border:none;
-    outline:none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
-    cursor: pointer;
-    font-size: 16px;
-    color:#333;
-    font-weight:600;
-}
-.btn:hover{
-    background: green;
-    color:yellow;
-}
-.wrapper .register-link{
-    font-size: 14.5px;
-    text-align: center;
-    margin: 20px 0 15px;
-}
-.register-link p a{
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
+    width:200px;
+    height: 200px;
+    padding: 10px;
 
-}
-.register-link p a:hover{
-    text-decoration:underline;
-    color:rgb(255, 0, 0);
-}
- .wrap{
-        width:420px;
-        background: transparent;
-        border:2px solid rgba(255,255,255,.2);
-        backdrop-filter: blur(20px);
-        box-shadow:0 0 10px rgba(0,0,0,.2);
-        color:#f1f1f1;
-        border-radius: 10px;
-        padding:30px 40px;
-    }
-    .wrap .input-box{
-        position:relative;
-        width: 100%;
-        height:50px;
-        margin: 30px 0;
-    }
-    .wrap .btn{
-        margin-top: 20px;
-        margin-left: 25%;
-        width:50%;
-        height:45px;
-        background: green;
-        border:none;
-        outline:none;
-        border-radius: 40px;
-        box-shadow: 0 0 10px rgba(0,0,0,.1);
-        cursor: pointer;
-        font-size: 16px;
-        color:red;
-        font-weight:600;
-    }
-    .btn:hover{
-        background: lightgreen;
-            }
-            h1{
-                color:orange;
-            }
-    #remember{
-        margin-left: 2px;
-    }
-    h1{
-    text-align: center;
-    color:#2d6fb1;
+
   }
-  .inputForm{
+.box>button{
+  width:70%;
+  height:30px;
+  background-color:orange;
+  color:#fff;
+  border:none;
+  outline:none;
+  font-size: large;
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+.box>button:hover{
+  background-color:#fff;
+  color:orange;
+}
+/*screen.html*/
+section{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.inputForm{
     padding:20px 45px 20px 20px;
-    border-radius:40px;
-    border: none;
-    outline: none;
-    color:rgb(253, 10, 213);
     text-align: center;
   }
   .inputForm input{ 
+    width: 30%;
+    height:30px;
+    font-size: 13px;
+    padding-left:10px;
+  }
+  .inputForm>button{
     width: 20%;
-    height:100%;
-    background:transparent;
-    border: none;
-    outline: none;
-    border:2px solid rgba(255,255,255,.2);
-    border-radius: 40px;
-    font-size: 16px;
-    color:orange;
-    padding: 10px 10px 2px 2px;
-  }
-  .inputForm input::placeholder{
-  text-align: center;
-  color:#ffffff7c;
-  }
-  .inputForm input[type="text"],input[type="number"]{
+    height:30px;
+    border-radius:5px;
+    outline:none;
+    border:none;
     text-align: center;
+    background: red;
+    color:green;
+    cursor: pointer; 
   }
-  .inputForm button{
-    width: 20%;
-    border-radius: 20px;
-    padding: 10px 10px 10px 10px;
-    text-align: center;
-    background: darkblue;
-    color:lightblue;
-    cursor: pointer;
-  }
-  .inputForm button:hover{
+  .inputForm>button:hover{
     background: lightblue;
     color:darkblue;
   }
@@ -198,12 +93,13 @@ body{
     height:20px;
     background:#2d6fb1;
     color:#fff;
+    margin-top:10px;
     line-height:20px;
     font-size:15px;
   }
   .seatStructure{
     padding-left: 15%;
-    margin-left: 20%;
+    margin-left: 10%;
   }
   
   .smallBox::before
@@ -217,7 +113,7 @@ body{
   .greenBox::before
   {
     content:" ";
-    background:Green;
+    background:green;
     margin-right:20px;
   }
   .redBox::before
@@ -248,34 +144,29 @@ body{
   
   table
   {
-    margin-top: 20px;
-    border-color: #fff;
+    margin-top: 50px;
+    border-color: #000;
     text-align:center;
   }
   
   
   .Displaytable
   {
-    margin-right: 60%;
-    color: #fff;
-    background: transparent;
-    backdrop-filter:blur(-20px);
+    color: #000;
     text-align:center;
   }
   .Displaytable td, .Displaytable th {
       border: 1px solid;
       text-align: center;
-      color:pink;
+      color:#000;
   }
   
   textarea{
-    color:#fff;
+    color:#000;
     border:none;
     margin-right: 50%;
-    padding-right: 50%;
-    background:transparent;
     text-align: center;
-    color:orange;
+
   } 
   input[type=checkbox] {
       width:0px;
@@ -297,82 +188,31 @@ body{
       background-color:Green;
       font-size: 15px;
   }
-
-  .box{ 
-
-    display: inline-block;
-    width: 220px;
-    text-align: center;
-    margin-top: 20px;
-    margin-left: 5%;
-  }
-  img{
-    display: inline;
-    width:100px;
-    height: 100px;
-  }
-button{
-    border-radius: 40px;
-    margin-top: 12px;
-    outline: none;
-    border: none;
-    padding: 20px 60px;
-    background-color: darkblue;
-    color:lightblue;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: normal;
-}
-button:hover{
-    background-color: lightblue;
-    color:darkblue;
-}
-   h2{
+  
+   section h1{
         text-align: center;
-        color:orange;
+        color:gold;
     }
-    .view{
-        display:flex;
-        width:420px;
-        padding: 30px 40px;
-        backdrop-filter: blur(20px);
-        border:2px solid rgb(255, 255, 255);
-        border-radius: 10px;
-        color: rgb(7, 226, 255);
+    .seatscolor{
+      display:flex;
+      flex-direction: column;
+      position:absolute;
+      top:50%;
+      left:65%;
     }
-    .view .input-box{
-        position: relative;
-        width:100%;
-        height:50px;
-        margin:30px 0;
+    .order{
+      display:flex;
+      flex-direction:column;
+      justify-content: center;
+      position:absolute;
+      top:85%;
+      left:46%;
+      width:10%;
+      height:30px;
+      background-color:peru;
+      color:rgb(238, 255, 0);
+      border:none;
+      outline:none;  
+
     }
-    .input-box input{
-        position:relative;
-        width: 100%;
-        height:100%;
-        background:transparent;
-        outline:none;
-        border-color: blue;
-        color:beige;
-        border-radius: 40px;
-        padding:20px 45px 20px 20px;
-    }
-    .input-box input::placeholder{
-        color:#ffffff7c;
-    }
-    .view .btn{
-        margin-left: 25%;
-        width:50%;
-        height:45px;
-        background:blue;
-        border-radius: 60px;
-        border-color: blueviolet;
-        cursor: pointer;
-        font-size: 16px;
-        color:lightblue;
-        font-weight:600;
-    }
-    .btn:hover{
-        background:lightblue;
-        color:blue;
-    }
+   
